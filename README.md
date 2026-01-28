@@ -1,27 +1,93 @@
-# University Complaint Management System
+# U-CMS: University Complaint Management System
 
-A Python-based system designed to streamline the process of lodging and resolving university complaints. This project was developed as a semester project for Software Engineering-2, focusing on **Object-Oriented Programming (OOP)** and **SOLID Design Principles**.
+A modern, high-performance desktop application designed to streamline student grievance resolution. Built with **Python** and **CustomTkinter**, this project features a "Glassmorphism" UI, animated backgrounds, and role-based access control.
 
-## Features
-* **Student Portal:** Allows students to log complaints with their Name and Roll Number.
-* **Teacher Dashboard:** Allows faculty to view, track, and update complaint statuses (Resolved, In Progress, Rejected).
-* **Data Persistence:** All data is saved automatically to a text file database (`complaints_data.txt`), ensuring no data is lost when the program closes.
-* **Modular Design:** Separated into `student.py` and `teacher.py` for better security and code management.
+> **Project Status:** Completed (Semester Project for Software Engineering-2)
 
-##  Tech Stack
-* **Language:** Python 3.x
-* **Concepts:** OOP (Classes, Inheritance), File I/O, SOLID Principles.
+## Key Features
 
-##  Project Structure
-* `student.py`: The client-side application for submitting forms.
-* `teacher.py`: The admin-side application for managing issues.
-* `complaints_data.txt`: The file-based database (generated automatically).
+### User Interface & Experience (UI/UX)
 
-##  How to Run
-1. Clone the repository.
-2. Run the student portal:
-   ```bash
-   python student.py
-3. Run the teacher portal:
-   ```bash
-   python teacher.py
+* **Breathing Gradient Background:** A subtle, non-intrusive animated background that shifts colors dynamically.
+* **Glassmorphism Design:** Modern, semi-transparent dashboard cards with rounded corners.
+* **Responsive Grid Tables:** perfectly aligned data columns that replace old-school text displays.
+* **Custom Dialogs:** Styled pop-up windows for alerts and confirmations (no system default message boxes).
+* **Interactive Sidebar:** Navigation state highlighting to indicate the active section.
+
+### Student Portal
+
+* **Complaint Submission:** Easy-to-use form with validation logic.
+* **Real-time Tracking:** Students can search their **Roll Number** to see the status of their specific complaints.
+* **Self-Management:** Students can delete their own complaints if filed in error.
+* **Auto-Reset:** Input fields auto-clear and reset placeholders after submission.
+
+### Admin Panel (Teacher Dashboard)
+
+* **Secure Authentication:** Protected by a login system (Credentials: `admin` / `admin123`).
+* **Live Statistics:** Dashboard cards showing real-time counts for **Total**, **Pending**, and **Resolved** cases.
+* **CRUD Operations:** Full capability to **Read**, **Update** (Status), and **Delete** records.
+* **Color-Coded Status:** Visual indicators (🟢 Resolved, 🟡 Pending, 🔴 Rejected) in the data table.
+
+## Tech Stack
+
+* **Language:** Python 3.10+
+* **GUI Framework:** `customtkinter` (Modern wrapper for Tkinter)
+* **Concepts:** OOP (Encapsulation, Modular Design), File I/O (TXT Database), Event Binding.
+
+## Project Structure
+
+```bash
+📂 U-CMS-Project/
+│
+├── 📄 MainApp.py           # The entry point (GUI & Animation Engine)
+├── 📄 StudentSide.py       # Logic module for handling student data
+├── 📄 AdminSide.py         # Logic module for Admin CRUD operations
+├── 📄 complaints_data.txt  # Auto-generated database file
+└── 📄 README.md            # Project Documentation
+
+```
+
+## Installation & Setup
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/yourusername/U-CMS-Project.git
+cd U-CMS-Project
+
+```
+
+
+2. **Install Dependencies**
+You need the `customtkinter` library for the UI.
+```bash
+pip install customtkinter
+
+```
+
+
+3. **Run the Application**
+```bash
+python MainApp.py
+
+```
+
+
+
+## Access Credentials
+
+To access the **Admin Panel**, use the following default credentials:
+
+* **Username:** `admin`
+* **Password:** `admin123`
+
+## Design Principles
+
+This project adheres to **SOLID Principles** by separating concerns:
+
+* **UI Layer (`MainApp.py`)**: Handles presentation and user interaction only.
+* **Logic Layer (`StudentSide.py`, `AdminSide.py`)**: Handles data processing and file storage.
+* **Data Layer**: Persistent storage via text files.
+
+---
+
+*Developed by [Your Name] | Department of Computer Science*
