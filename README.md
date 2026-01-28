@@ -90,4 +90,4 @@ This project adheres to **SOLID Principles** by separating concerns:
 
 ---
 
-*Developed by [Your Name] | Department of Computer Science*
+*Developed by Afnan Alam Khan & Fahad Ali Shah | Department of Computer Science*
