@@ -1,2 +1,6 @@
-1|Afnan Alam Khan|xxxxx|2025-12-31|Wifi Not Working|Resolved
-2|AFNAN ALAM KAHN|AA11|2025-12-31|ISII|Pending
+1|fahad ali shah |36|2026-01-28|wifi issue|In Progress
+2|afnan|4433|2026-01-28|water issue|Pending
+3|afnan|1122|2026-01-28|warm water issue|Pending
+4|afnan|1122|2026-01-28|warm water issue|Pending
+5|afnan|3322|2026-01-28|no electricity|Resolved
+7|aaaa|1122|2026-01-28|wifi|Resolved
